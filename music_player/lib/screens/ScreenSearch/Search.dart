@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -63,10 +61,10 @@ class _ScreenSearchState extends State<ScreenSearch> {
                 style: const TextStyle(color: Colors.white),
                 cursorColor: Colors.white,
                 decoration: InputDecoration(
-                    fillColor: Color.fromARGB(255, 36, 35, 34),
+                    fillColor: const Color.fromARGB(255, 36, 35, 34),
                     enabledBorder: OutlineInputBorder(
-                      borderSide:
-                          BorderSide(color: Color(0xff2b2b29), width: 2.0),
+                      borderSide: const BorderSide(
+                          color: Color(0xff2b2b29), width: 2.0),
                       borderRadius: BorderRadius.circular(25.0),
                     ),
                     border: OutlineInputBorder(
@@ -149,9 +147,9 @@ class _ScreenSearchState extends State<ScreenSearch> {
                         );
                       },
                     ))
-                  : Padding(
-                      padding: const EdgeInsets.all(100.0),
-                      child: const Text(
+                  : const Padding(
+                      padding: EdgeInsets.all(100.0),
+                      child: Text(
                         "No Result Found",
                         style: TextStyle(color: Colors.white),
                       ),

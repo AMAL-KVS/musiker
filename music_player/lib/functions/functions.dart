@@ -48,5 +48,7 @@ Audio find(List<Audio> sourse, String fromPath) {
 
 AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer.withId('0');
 
-// List playlists = [];
-// String? playlistName
+List playlists = [];
+String? playlistName = '';
+List<dynamic> playlistSongs = [];
+List<LoacalSongs> PlaylistSongModel = [];
